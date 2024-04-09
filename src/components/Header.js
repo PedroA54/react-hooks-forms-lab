@@ -2,10 +2,10 @@ import React from "react";
 
 function Header({ isDarkMode, onDarkModeClick }) {
   return (
-    <header>
-      <h2>Shopster</h2>
+    <header className="Header">
+      <h1>Shopping List</h1>
       <button onClick={onDarkModeClick}>
-        {isDarkMode ? "Dark" : "Light"} Mode
+        {isDarkMode ? "Switch to Light Mode" : "Switch to Dark Mode"}
       </button>
     </header>
   );
